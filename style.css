@@ -1,7 +1,6 @@
 :root {
     --bg: transparent;
-    --logo: url(profileImage.png);
-    --logopng: url(waveHand.png);
+    --logopng: url(links.png);
     --ticket: url(https://assets.codepen.io/13471/ticket-shape.svg);
     --ar: 20/30;
     --gutter: 8%;
@@ -75,12 +74,12 @@
     transform: rotateY(180deg) translateZ(1px);
 }
 
-.back {
-    display: flex; /* Makes the .back section a flex container */
-    justify-content: center; /* Horizontally centers the content */
-    align-items: center; /* Vertically centers the content */
-    height: 100%; /* Ensure the .back section has a height */
-    text-align: center; /* Centers text within the <p> tag */
+.back, .front {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    text-align: center;
 }
 
 .holo {
@@ -126,20 +125,14 @@
     opacity: var(--o);
 }
 
-.logo {
-    position: relative;
+p {
+    pointer-events: auto;
     z-index: 2;
+    
 }
 
-.logo {
-    width: 50%;
-    place-self: center;
-    transform: translateY(-14%);
-}
-
-img {
-    display: block;
-    max-width: 100%;
+a {
+    color: #000000;
 }
 
 body,
@@ -151,12 +144,12 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
  
 }
 
 #app {
     color: black;
-    font-family: 'Inter', sans-serif;
     font-size: 26px;
     line-height: 1.6;
     font-weight: 500;
@@ -178,5 +171,15 @@ html {
 @media screen and (max-width: 400px) {
     .ticket {
         --scale: 0.75;
+        height: 75%;
     }
+}
+
+.alert-message {
+    color: #000000;
+    background-color: #6afbb3;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
 }
