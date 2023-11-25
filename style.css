@@ -181,11 +181,11 @@ html {
     padding: 8px;
     margin-top: 5px;
     border-radius: 5px;
-    font-size: 14px;
-    display: none; /* Initially hidden */
-    justify-content: center;
-    align-items: center;
+    font-size: 12px;
+    display: none; 
+    text-align: center;
 }
+
 
 .logo {
     position: relative;
