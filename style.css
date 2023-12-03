@@ -1,5 +1,5 @@
 :root {
-    --bg: #000000;
+    --bg: transparent;
     --logo: url(memoji.png);
     --logopng: url(links.png);
     --ticket: url(https://assets.codepen.io/13471/ticket-shape.svg);
